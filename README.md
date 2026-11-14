@@ -7,24 +7,24 @@
 
 ---
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Active_24%2F7-00C853?style=for-the-badge&logo=render&logoColor=white)](https://medical-connect-pp2v.onrender.com)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Active_24%2F7-0F766E?style=for-the-badge&logo=render&logoColor=white)](https://medical-connect-pp2v.onrender.com)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rushi0369/Medical-Connect)
-[![Created by](https://img.shields.io/badge/Created_by-Rushi_Patel-1E88E5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rushi0369)
+[![Created by](https://img.shields.io/badge/Created_by-Rushi_Patel-1D4ED8?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rushi0369)
 [![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
 
 <br/>
 
-[![React 19](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript_5-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Node.js 22+](https://img.shields.io/badge/Node.js_22+-43853D?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express 5](https://img.shields.io/badge/Express_5.3-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
-[![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-4EA94B?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
-[![Socket.io](https://img.shields.io/badge/Socket.io_Realtime-010101?style=flat-square&logo=socket.io&logoColor=white)](https://socket.io/)
+[![React 19](https://img.shields.io/badge/React_19-1E293B?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5-2563EB?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS_v4-14B8A6?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Node.js 22+](https://img.shields.io/badge/Node.js_22+-166534?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express 5](https://img.shields.io/badge/Express_5.3-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-0F766E?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
+[![Socket.io](https://img.shields.io/badge/Socket.io_Realtime-334155?style=for-the-badge&logo=socket.io&logoColor=white)](https://socket.io/)
 
 <br/>
 
-[**🌐 Live Website**](https://medical-connect-pp2v.onrender.com) • [**🔑 Login Credentials**](#-test-login-credentials) • [**🔄 System Workflow**](#-order-lifecycle--workflow) • [**✨ Key Features**](#-key-features) • [**📍 Store Profile**](#-physical-store-location) • [**🛠️ Setup Guide**](#-local-development-setup)
+[**🌐 Live Website**](https://medical-connect-pp2v.onrender.com)  ·  [**🔑 Login Credentials**](#-test-login-credentials)  ·  [**🔄 System Workflow**](#-order-lifecycle--workflow)  ·  [**✨ Key Features**](#-key-features)  ·  [**📍 Store Profile**](#-physical-store-location)  ·  [**🛠️ Setup Guide**](#-local-development-setup)
 
 </div>
 
@@ -57,8 +57,8 @@ The entire stack is deployed and running live on **Render Cloud Infrastructure**
 | Service | Provider | Status | Live Link |
 | :--- | :--- | :--- | :--- |
 | **Unified Web App** | Render (Singapore) | ![Online](https://img.shields.io/badge/Status-Online_24%2F7-brightgreen?style=flat-square) | [**medical-connect-pp2v.onrender.com**](https://medical-connect-pp2v.onrender.com) |
-| **Cloud Database** | MongoDB Atlas Replica Set | ![Active](https://img.shields.io/badge/Atlas-Cluster_Active-4EA94B?style=flat-square) | Cloud Managed |
-| **Health Monitor** | cron-job.org | ![Ping](https://img.shields.io/badge/Uptime-Zero_Sleep_Ping-00C853?style=flat-square) | Runs every 10 mins |
+| **Cloud Database** | MongoDB Atlas Replica Set | ![Active](https://img.shields.io/badge/Atlas-Cluster_Active-0F766E?style=flat-square) | Cloud Managed |
+| **Health Monitor** | cron-job.org | ![Ping](https://img.shields.io/badge/Uptime-Zero_Sleep_Ping-0F766E?style=flat-square) | Runs every 10 mins |
 
 > [!TIP]
 > You can open the live website directly on your smartphone or desktop browser to test all three interactive roles simultaneously.
@@ -265,7 +265,7 @@ This project features unified single-service production deployment where Express
 ### **Rushi Patel**
 
 [![GitHub Profile](https://img.shields.io/badge/GitHub-@rushi0369-181717?style=for-the-badge&logo=github)](https://github.com/rushi0369)
-[![Repository](https://img.shields.io/badge/Project-Medical--Connect-1E88E5?style=for-the-badge&logo=git&logoColor=white)](https://github.com/rushi0369/Medical-Connect)
+[![Repository](https://img.shields.io/badge/Project-Medical--Connect-1D4ED8?style=for-the-badge&logo=git&logoColor=white)](https://github.com/rushi0369/Medical-Connect)
 
 </div>
 
