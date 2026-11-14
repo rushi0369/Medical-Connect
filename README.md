@@ -48,8 +48,6 @@ Try all three role-based portals on the live website:
 | 🛒 **Customer** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543211` | `Customer@123` | Upload prescriptions, approve invoices, track live delivery status, 1-click refill orders |
 | 🛵 **Delivery Rider** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543212` | `Rider@123` | View assigned orders, Google Maps navigation, doorstep cash & UPI QR collections |
 
-*(Alternative test accounts: Customer `9023134390`, Rider Kishan `8401331317` / `Rider@123`)*
-
 ---
 
 ## ✨ Key Features
