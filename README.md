@@ -1,3 +1,4 @@
+<a id="top"></a>
 <div align="center">
 
 # 🏥 Medical-Connect | CK Medical
@@ -77,6 +78,18 @@ Three pre-configured role accounts are ready for testing on the live deployment:
 
 > [!NOTE]
 > All passwords use standard demo credentials. Accounts can also reset passwords via self-service 6-digit OTP codes.
+
+### ⚡ 3-Minute Interactive Demo Walkthrough
+
+Experience the complete end-to-end workflow in minutes using two browser tabs (or one normal + one incognito tab):
+
+| Step | Portal & Role | Action to Test |
+| :---: | :--- | :--- |
+| **1** | 🛒 **Customer** (`9876543211`) | Log in ➔ Click **Request Medicines** ➔ Type e.g. *"Dolo 650 - 1 strip, Cheston Cold"* or upload a photo ➔ Click **Submit Order**. |
+| **2** | 🏥 **Admin** (`9876543210`) | In an incognito tab, open the new order under **Review Queue** ➔ Enter unit prices (e.g. ₹30, ₹45) ➔ Click **Send Bill to Customer**. |
+| **3** | 🛒 **Customer** | Switch back to the customer tab ➔ Refresh/view the order ➔ Review the itemized GST bill ➔ Click **Approve Bill**. |
+| **4** | 🏥 **Admin** | In Admin tab ➔ Go to **Dispatch** ➔ Assign Rider **MediCare Rider** (`9876543212`). |
+| **5** | 🛵 **Rider** (`9876543212`) | Log in as Rider ➔ Open assigned order ➔ Tap **Start Delivery** ➔ Tap **Mark Delivered & Collect Cash**. |
 
 ---
 
@@ -281,6 +294,6 @@ This project is open-source and licensed under the **ISC License**.
 
 Created with ❤️ by **[Rushi Patel](https://github.com/rushi0369)** for **CK Medical**, Mandvi Road, Kim Char Rasta, Gujarat.
 
-[**Back to Top ⬆️**](#-medical-connect--ck-medical)
+[**Back to Top ⬆️**](#top)
 
 </div>
