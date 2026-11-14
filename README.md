@@ -9,6 +9,7 @@
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Active_24%2F7-00C853?style=for-the-badge&logo=render&logoColor=white)](https://medical-connect-pp2v.onrender.com)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rushi0369/Medical-Connect)
+[![Created by](https://img.shields.io/badge/Created_by-Rushi_Patel-1E88E5?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rushi0369)
 [![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
 
 <br/>
@@ -257,6 +258,20 @@ This project features unified single-service production deployment where Express
 
 ---
 
+## 👨‍💻 Created By
+
+<div align="center">
+
+### **Rushi Patel**
+*Full-Stack Web Developer & Platform Architect*
+
+[![GitHub Profile](https://img.shields.io/badge/GitHub-@rushi0369-181717?style=for-the-badge&logo=github)](https://github.com/rushi0369)
+[![Repository](https://img.shields.io/badge/Project-Medical--Connect-1E88E5?style=for-the-badge&logo=git&logoColor=white)](https://github.com/rushi0369/Medical-Connect)
+
+</div>
+
+---
+
 ## 📄 License
 
 This project is open-source and licensed under the **ISC License**.
@@ -265,7 +280,7 @@ This project is open-source and licensed under the **ISC License**.
 
 <div align="center">
 
-Made with ❤️ for **CK Medical**, Mandvi Road, Kim Char Rasta, Gujarat.
+Created with ❤️ by **[Rushi Patel](https://github.com/rushi0369)** for **CK Medical**, Mandvi Road, Kim Char Rasta, Gujarat.
 
 [**Back to Top ⬆️**](#-medical-connect--ck-medical)
 
