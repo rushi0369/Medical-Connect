@@ -1,80 +1,135 @@
 <div align="center">
 
-# 🏥 CK Medical | Medical Store Order & Delivery Management System
+# 🏥 Medical-Connect | CK Medical
+### Hyperlocal Pharmacy Order, Prescription Billing & Home Delivery Platform
 
-**A modern, full-stack pharmacy order management and home delivery platform tailored for local chemists and medical shops.**
+**A full-stack, real-time medicine ordering and logistics platform purpose-built for local chemists, pharmacies, and neighborhood delivery.**
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Active_24%2F7-brightgreen?style=for-the-badge&logo=render)](https://medical-connect-pp2v.onrender.com)
-[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Node.js](https://img.shields.io/badge/Node.js_22+-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express 5](https://img.shields.io/badge/Express_5-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+---
 
-[**Live Demo**](https://medical-connect-pp2v.onrender.com) • [**Explore Features**](#-key-features) • [**Demo Credentials**](#-demo-login-credentials) • [**Quickstart**](#-local-development-setup) • [**Architecture**](#-system-architecture)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Active_24%2F7-00C853?style=for-the-badge&logo=render&logoColor=white)](https://medical-connect-pp2v.onrender.com)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rushi0369/Medical-Connect)
+[![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)](LICENSE)
+
+<br/>
+
+[![React 19](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Node.js 22+](https://img.shields.io/badge/Node.js_22+-43853D?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express 5](https://img.shields.io/badge/Express_5.3-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-4EA94B?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
+[![Socket.io](https://img.shields.io/badge/Socket.io_Realtime-010101?style=flat-square&logo=socket.io&logoColor=white)](https://socket.io/)
+
+<br/>
+
+[**🌐 Live Website**](https://medical-connect-pp2v.onrender.com) • [**🔑 Login Credentials**](#-test-login-credentials) • [**🔄 System Workflow**](#-order-lifecycle--workflow) • [**✨ Key Features**](#-key-features) • [**📍 Store Profile**](#-physical-store-location) • [**🛠️ Setup Guide**](#-local-development-setup)
 
 </div>
 
 ---
 
-## 🌟 Overview
+## 🌟 The Problem & Solution
 
-**CK Medical** bridges local neighborhood medical stores with home delivery. Unlike traditional e-commerce catalogs with rigid inventory databases, local chemists stock thousands of uncataloged medicines that change daily. 
+Traditional pharmacy e-commerce apps require thousands of pre-cataloged SKU items with rigid stock inventory counts. For local chemists, medicines go in and out of stock hourly, brands have equivalent generic substitutes, and patients frequently order by snapping a photo of their handwritten doctor's prescription.
 
-With **CK Medical**:
-1. **Customers** take a quick photo of their doctor's handwritten prescription or type medicine names and submit a request from home.
-2. **Chemists & Pharmacists** review shelf availability, substitute missing items with suitable alternatives, draft professional GST invoices, and dispatch orders to riders.
-3. **Delivery Riders** navigate real-time road routes via Google Maps, collect payments (Store UPI QR or Cash), and settle funds directly with the pharmacy.
+**Medical-Connect solves this with an agile prescription-first approach:**
+
+```
+┌─────────────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
+│   🛒 Customer Portal    │ ───► │  🏥 Pharmacist Admin    │ ───► │   🛵 Delivery Rider     │
+│  Upload Prescription or │      │  Verify Shelf Stock,    │      │  Turn-by-turn Road GPS, │
+│  Type Medicines From Bed│      │  Quote PDF Bill & GST   │      │  Collect Cash & UPI QR  │
+└─────────────────────────┘      └─────────────────────────┘      └─────────────────────────┘
+```
+
+1. **Customers** snap a picture of their prescription or type medicine names and submit an order from home in seconds.
+2. **Chemists & Pharmacists** review stock availability, suggest brand alternatives, generate itemized GST PDF invoices, and dispatch orders to riders.
+3. **Delivery Riders** receive real-time road directions via Google Maps, collect payments (Store UPI QR or Cash), and reconcile cash handovers directly at the store.
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Demo & Production Deployment
 
-* **Live URL**: **[https://medical-connect-pp2v.onrender.com](https://medical-connect-pp2v.onrender.com)**
-* **Hosting**: Render (Cloud Web Service) + cron-job.org (24/7 Keep-Alive)
-* **Database**: MongoDB Atlas Cloud Replica Set
-* **SSL/TLS**: Automated Let's Encrypt HTTPS
+The entire stack is deployed and running live on **Render Cloud Infrastructure** backed by **MongoDB Atlas**:
+
+| Service | Provider | Status | Live Link |
+| :--- | :--- | :--- | :--- |
+| **Unified Web App** | Render (Singapore) | ![Online](https://img.shields.io/badge/Status-Online_24%2F7-brightgreen?style=flat-square) | [**medical-connect-pp2v.onrender.com**](https://medical-connect-pp2v.onrender.com) |
+| **Cloud Database** | MongoDB Atlas Replica Set | ![Active](https://img.shields.io/badge/Atlas-Cluster_Active-4EA94B?style=flat-square) | Cloud Managed |
+| **Health Monitor** | cron-job.org | ![Ping](https://img.shields.io/badge/Uptime-Zero_Sleep_Ping-00C853?style=flat-square) | Runs every 10 mins |
+
+> [!TIP]
+> You can open the live website directly on your smartphone or desktop browser to test all three interactive roles simultaneously.
 
 ---
 
-## 🔑 Demo Login Credentials
+## 🔑 Test Login Credentials
 
-Try all three role-based portals on the live website:
+Three pre-configured role accounts are ready for testing on the live deployment:
 
-| Role | Portal Link | Mobile Number | Password | Role Summary |
+| Role | Portal Link | Mobile Number | Password | Capabilities & Access |
 | :--- | :--- | :--- | :--- | :--- |
-| 🏥 **Admin (Pharmacist)** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543210` | `Admin@123` | Store manager, prescription review, billing, dispatch |
-| 🛒 **Customer** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543211` | `Customer@123` | Customer portal for medicine orders & approvals |
-| 🛵 **Delivery Rider** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543212` | `Rider@123` | Rider portal for delivery navigation & cash collection |
+| 🏥 **Admin (Pharmacist)** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543210` | `Admin@123` | Prescription inspection, GST billing, dispatching riders, cash settlements, customer management |
+| 🛒 **Customer** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543211` | `Customer@123` | Prescription photo uploads, invoice approval, real-time tracking, 1-click medicine reorders |
+| 🛵 **Delivery Rider** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543212` | `Rider@123` | Delivery queue, Google Maps navigation, doorstep cash & UPI QR collections |
+
+> [!NOTE]
+> All passwords use standard demo credentials. Accounts can also reset passwords via self-service 6-digit OTP codes.
+
+---
+
+## 🔄 Order Lifecycle & Workflow
+
+The following flowchart illustrates the complete lifecycle of a medicine request from initial prescription submission to doorstep delivery and payment settlement:
+
+```mermaid
+flowchart TD
+    A[🛒 Customer uploads prescription photo or items] --> B[📋 Order created: PENDING_ADMIN_REVIEW]
+    B --> C{🏥 Pharmacist reviews order}
+    C -->|Items verified & priced| D[📄 GST Invoice generated: WAITING_FOR_CUSTOMER_APPROVAL]
+    C -->|Unserviceable / Invalid| X[❌ Cancelled]
+    D --> E{🛒 Customer reviews bill}
+    E -->|Approved via Web or WhatsApp| F[✅ Order CONFIRMED]
+    E -->|Rejected| D
+    F --> G[🛵 Rider Assigned by Admin: RIDER_ASSIGNED]
+    G --> H[📦 Rider picks up medicines: OUT_FOR_DELIVERY]
+    H --> I[📍 Rider arrives at doorstep: REACHED_CUSTOMER]
+    I --> J{💵 Payment Collection}
+    J -->|Store UPI QR Code| K[📱 Instant Online Payment]
+    J -->|Cash on Delivery| L[💵 Cash Collected by Rider]
+    K --> M[🎉 Status: DELIVERED]
+    L --> M
+    L --> N[🤝 Rider Cash Settlement with Store Cashier]
+```
 
 ---
 
 ## ✨ Key Features
 
-### 🛒 Customer Portal
-- 📸 **Prescription Photo Upload**: Drag & drop doctor prescription images with secure cloud GridFS storage.
-- 📝 **Custom Medicine Notes**: Request specific brands, dosages, or general health items in Gujarati or English.
-- 🧾 **Digital Invoice Approval**: Review itemized pricing and doctor-suggested alternatives before confirming.
-- 🔁 **1-Click Monthly Refill**: Easily reorder recurring medications with a single click from order history.
-- 📍 **Saved Addresses**: Manage multiple delivery addresses (Home, Office, Parents) with GPS pins.
-- 🔒 **Self-Service Password Recovery**: Instant 6-digit OTP verification code via WhatsApp or on-screen recovery badge.
+### 🛒 Customer Experience
+* 📸 **Prescription Photo Upload**: Drag & drop doctor prescription images with secure cloud GridFS storage.
+* 📝 **Custom Medicine Notes**: Request specific brand names, dosages, or OTC wellness products in Gujarati or English.
+* 🧾 **Interactive Bill Approval**: View itemized pricing, discounts, delivery fees, and doctor-approved brand alternatives before confirming.
+* 🔁 **1-Click Monthly Refill**: Easily reorder recurring medications with a single click from past order history.
+* 📍 **Multiple Saved Addresses**: Save and switch between Home, Office, or Parents' addresses with GPS coordinate pinning.
+* 🔒 **Self-Service Password Recovery**: Instant 6-digit OTP verification code via WhatsApp or on-screen recovery badge.
 
-### 🏥 Admin & Pharmacy Management Panel
-- 🔍 **Prescription Review Station**: Side-by-side prescription viewer with item availability toggles and alternative medicine notes.
-- 📄 **GST Invoice Generation**: Automated PDF generation with pharmacy GSTIN, FSSAI, itemized CGST/SGST, and batch numbers.
-- 💬 **WhatsApp Bill Sharing**: 1-click formatted WhatsApp bills sent directly to the customer's phone (`wa.me`).
-- 🛵 **Rider Dispatch & Route Calculation**: Road distance estimation from the physical store to calculate delivery tiers.
-- 💵 **Payment Reconciliation**: Doorstep Cash On Delivery (COD) and direct Store UPI QR tracking with rider cash handover settlements.
-- 🔔 **Bilingual Refill Reminders**: Culturally crafted monthly refill messages in Gujarati and English with sacred blessings.
-- ⚙️ **Store Profile & Location Setup**: Custom Store UPI QR image uploader and GPS store coordinate editor.
-- 🗑️ **Universal Bulk Actions**: Select-All checkboxes and bulk deletion across Invoices, Orders, Payments, Customers, and Riders.
+### 🏥 Pharmacist & Admin Command Center
+* 🔍 **Dual Prescription Inspection Station**: Side-by-side prescription viewer with item availability toggles and alternative notes.
+* 📄 **Automated GST Invoice Engine**: Clean PDF generation with pharmacy GSTIN, FSSAI license numbers, itemized CGST/SGST, and batch numbers.
+* 💬 **1-Click WhatsApp Billing**: Direct `wa.me` integration to send itemized bills and approval links straight to the customer's phone.
+* 🛵 **Smart Rider Dispatch**: Road distance estimation from the physical store to calculate delivery tiers dynamically.
+* 💵 **Payment Reconciliation**: Track Cash on Delivery (COD) and Store UPI QR payments with rider cash handover settlements.
+* 🔔 **Bilingual Refill Reminders**: Culturally crafted monthly refill messages in Gujarati and English with sacred blessings.
+* ⚙️ **Store Profile & Location Setup**: Custom Store UPI QR image uploader and GPS store coordinate editor.
+* 🗑️ **Universal Bulk Actions**: Select-All checkboxes and bulk deletion across Invoices, Orders, Payments, Customers, and Riders.
 
 ### 🛵 Delivery Rider Mobile App
-- 📦 **Order Queue**: Clean mobile-first interface optimized for drivers on two-wheelers.
-- 🗺️ **Turn-by-Turn Navigation**: One-tap deep link to Google Maps with optimized road routing.
-- 📲 **Doorstep UPI QR & Cash Collection**: Prompt customers to scan the store's static UPI QR code or collect exact cash.
-- 🤝 **Rider Cash Settlement**: Track cash held in wallet until physical handover to the store cashier.
+* 📦 **Order Queue**: Mobile-first interface optimized for delivery agents on two-wheelers.
+* 🗺️ **Turn-by-Turn Navigation**: One-tap deep link to Google Maps with optimized road routing to the customer's doorstep.
+* 📲 **Doorstep UPI QR & Cash Collection**: Prompt customers to scan the store's static UPI QR code or collect exact cash.
+* 🤝 **Rider Wallet & Settlement**: Track cash held in wallet until physical handover to the store cashier.
 
 ---
 
@@ -82,51 +137,53 @@ Try all three role-based portals on the live website:
 
 The system is configured around the real-world location of **CK Medical**:
 
-* **Store Name**: CK Medical
-* **Address**: Mandvi Road, Near Mandvi Bus Depot, Char Rasta, Kim, Gujarat 394110
-* **Area / City**: Char Rasta, Kim, Gujarat
-* **GPS Coordinates**: `21.4035° N, 72.9274° E`
-* **Delivery Engine**: Road distance calculations use this store location as the starting origin for delivery tiers.
+<div align="center">
+
+| Property | Details |
+| :--- | :--- |
+| **🏪 Store Name** | **CK Medical** (Chemist & Druggist) |
+| **📍 Address** | Mandvi Road, Near Mandvi Bus Depot, Char Rasta, Kim, Gujarat 394110 |
+| **🌐 GPS Coordinates** | `21.4035° N, 72.9274° E` |
+| **🚚 Delivery Origin** | All distance tiers and delivery route calculations originate from this physical store coordinate |
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🛠️ System Architecture & Tech Stack
 
+```mermaid
+graph LR
+    subgraph Frontend["💻 Frontend (Client)"]
+        UI[Vite + React 19 SPA]
+        TW[Tailwind CSS v4]
+        Router[React Router v7]
+    end
+
+    subgraph Backend["⚡ Backend API"]
+        EXP[Node.js 22 + Express 5.3]
+        AUTH[JWT HttpOnly Cookies + OTP]
+        PDF[PDFKit Invoicing Engine]
+        SOCK[Socket.io Realtime]
+    end
+
+    subgraph Database["🍃 Database & Cloud"]
+        ATLAS[(MongoDB Atlas Replica Set)]
+        GRIDFS[GridFS Image Storage]
+    end
+
+    UI -->|REST API Requests| EXP
+    UI <-->|WebSockets| SOCK
+    EXP -->|Mongoose ACID Transactions| ATLAS
+    EXP -->|Prescription Photos| GRIDFS
 ```
-┌────────────────────────────────────────────────────────┐
-│                   Vite + React 19 SPA                  │
-│       Tailwind CSS v4 • Lucide Icons • React Router    │
-└───────────────────────────┬────────────────────────────┘
-                            │ REST API + JSON
-                            ▼
-┌────────────────────────────────────────────────────────┐
-│                  Node.js + Express 5.3                 │
-│   JWT Auth • Multer • PDFKit • GridFS • Zod Validation │
-└───────────────────────────┬────────────────────────────┘
-                            │ Mongoose ODM
-                            ▼
-┌────────────────────────────────────────────────────────┐
-│                   MongoDB Atlas Cloud                  │
-│   Transactions • Replica Sets • GridFS Binary Storage  │
-└────────────────────────────────────────────────────────┘
-```
 
-### Backend
-* **Runtime**: Node.js v22+
-* **Framework**: Express 5.3 (featuring modern middleware routing and async error handling)
-* **Database**: MongoDB Atlas with Mongoose ODM (utilizing ACID multi-document transactions)
-* **Authentication**: HTTP-Only Secure JWT Cookies + SHA-256 OTP Password Reset
-* **Document Generation**: PDFKit (custom invoice layouts)
-* **File Storage**: MongoDB GridFS for prescription photos and payment QR codes
-* **Validation**: Zod schema validation for all endpoints and queries
+### Full Stack Breakdown
 
-### Frontend
-* **Core**: React 19 with TypeScript
-* **Bundler**: Vite 8 with Rolldown optimizations
-* **Styling**: Tailwind CSS v4 (Sage & Beige medical palette)
-* **Routing**: React Router v7 with role-based route guards
-* **Forms & State**: React Hook Form + Zod resolvers
-* **Icons**: Lucide React
+* **Frontend**: React 19, TypeScript, Vite 8, Tailwind CSS v4, Lucide React, React Hook Form, Zod.
+* **Backend**: Node.js v22+, Express 5.3 (modern middleware routing & async error handling), Multer, PDFKit.
+* **Database**: MongoDB Atlas with Mongoose ODM (utilizing ACID multi-document transactions & GridFS binary storage).
+* **Security**: HTTP-Only Secure JWT Cookies, bcrypt password hashing, input sanitization, rate-limiting, CORS origin validation.
 
 ---
 
@@ -143,8 +200,7 @@ cd Medical-Connect
 ```
 
 ### 2. Configure Environment Variables
-Create a `.env` file in the `backend/` folder:
-
+Create a `.env` file in the `backend/` directory:
 ```env
 PORT=5000
 NODE_ENV=development
@@ -153,71 +209,64 @@ JWT_SECRET=your_super_secret_key_minimum_32_characters_long
 CLIENT_URL=http://localhost:5173
 ```
 
-Create a `.env` file in the `frontend/` folder:
-
+Create a `.env` file in the `frontend/` directory:
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
-### 3. Install Dependencies
+### 3. Install Dependencies & Build
 ```bash
-# From project root
 npm run build
 ```
 
 ### 4. Seed Initial Accounts
-Populate your database with the initial admin, customer, and rider accounts:
+Populate your database with the default admin, customer, and rider accounts:
 ```bash
 npm --prefix backend run seed:all
 ```
 
-### 5. Start Development Servers
-Open two terminal windows:
-
-**Window 1 (Backend API):**
+### 5. Launch Development Servers
 ```bash
-cd backend
-npm run dev
-# Server running at http://localhost:5000
+# Terminal 1: Backend API (runs at http://localhost:5000)
+cd backend && npm run dev
+
+# Terminal 2: Frontend Client (runs at http://localhost:5173)
+cd frontend && npm run dev
 ```
 
-**Window 2 (Frontend Client):**
-```bash
-cd frontend
-npm run dev
-# Client running at http://localhost:5173
-```
-
-Open your browser at **`http://localhost:5173`**!
+Visit **`http://localhost:5173`** in your browser!
 
 ---
 
-## 🌐 Production Deployment (Render)
+## 🌐 Production Deployment (Single-Service Architecture)
 
-This repository includes unified deployment scripts so Express automatically serves the compiled Vite frontend in production on a single service:
+This project features unified single-service production deployment where Express automatically serves the compiled Vite SPA static bundle:
 
 1. **Deploy on [Render.com](https://render.com/)**:
-   * Create a **New Web Service** connected to your repository.
+   * Create a **New Web Service** connected to this repository.
    * **Runtime**: `Node`
-   * **Region**: `Singapore` (or closest to your target audience)
    * **Build Command**: `npm run build`
    * **Start Command**: `npm start`
-2. **Set Environment Variables on Render**:
+2. **Environment Variables on Render**:
    * `NODE_ENV`: `production`
-   * `MONGODB_URI`: *Your Atlas connection string*
-   * `JWT_SECRET`: *Your secret key*
-   * `CLIENT_URL`: `https://your-app-name.onrender.com`
+   * `MONGODB_URI`: *Your MongoDB Atlas connection URI*
+   * `JWT_SECRET`: *Your cryptographically secure secret string*
+   * `CLIENT_URL`: `https://your-service-name.onrender.com`
 3. **24/7 Keep-Alive (Zero Sleep)**:
-   * Setup a free ping job on [cron-job.org](https://cron-job.org/) pointing to `https://your-app-name.onrender.com/api/health` every 10 minutes.
+   * Setup a free ping monitor on [cron-job.org](https://cron-job.org/) targeting `https://your-service-name.onrender.com/api/health` every 10 minutes.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **ISC License**.
+This project is open-source and licensed under the **ISC License**.
 
 ---
 
 <div align="center">
-Made with ❤️ for <b>CK Medical</b>, Kim Char Rasta, Gujarat.
+
+Made with ❤️ for **CK Medical**, Mandvi Road, Kim Char Rasta, Gujarat.
+
+[**Back to Top ⬆️**](#-medical-connect--ck-medical)
+
 </div>
