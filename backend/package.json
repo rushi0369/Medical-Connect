@@ -15,8 +15,7 @@
     "db:check": "node scripts/check-database.js",
     "db:set-password": "node scripts/set-database-password.js",
     "seed:admin": "node scripts/seed-admin.js",
-    "seed:all": "node scripts/seed-all-roles.js",
-    "seed:demo": "node scripts/seed-demo-data.js"
+    "seed:all": "node scripts/seed-all-roles.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
