@@ -263,7 +263,6 @@ This project features unified single-service production deployment where Express
 <div align="center">
 
 ### **Rushi Patel**
-*Full-Stack Web Developer & Platform Architect*
 
 [![GitHub Profile](https://img.shields.io/badge/GitHub-@rushi0369-181717?style=for-the-badge&logo=github)](https://github.com/rushi0369)
 [![Repository](https://img.shields.io/badge/Project-Medical--Connect-1E88E5?style=for-the-badge&logo=git&logoColor=white)](https://github.com/rushi0369/Medical-Connect)
