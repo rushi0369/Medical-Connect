@@ -42,11 +42,27 @@ With **CK Medical**:
 
 Try all three role-based portals on the live website:
 
-| Role | Portal Link | Mobile Number | Password | Key Responsibilities |
+### Primary Role Accounts
+| Role | Portal Link | Mobile Number | Password | Role Summary |
 | :--- | :--- | :--- | :--- | :--- |
-| 🏥 **Admin (Pharmacist)** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543210` | `Admin@123` | Review prescriptions, generate PDF bills, assign riders, settle payments, send refill reminders |
-| 🛒 **Customer** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543211` | `Customer@123` | Upload prescriptions, approve invoices, track live delivery status, 1-click refill orders |
-| 🛵 **Delivery Rider** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543212` | `Rider@123` | View assigned orders, Google Maps navigation, doorstep cash & UPI QR collections |
+| 🏥 **Admin (Pharmacist)** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543210` | `Admin@123` | Store manager, prescription review, billing, dispatch |
+| 🛒 **Customer (Default)** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543211` | `Customer@123` | Standard customer account |
+| 🛵 **Delivery Rider (Default)** | [/login](https://medical-connect-pp2v.onrender.com/login) | `9876543212` | `Rider@123` | Primary delivery rider (`RDR-0001`) |
+
+### 👥 5 Demo Customers (Password: `Customer@123`)
+| Customer Name | Mobile Number | Area (Kim, Gujarat) | Pre-Loaded Demo Scenario |
+| :--- | :--- | :--- | :--- |
+| **Priya Sharma** | `9800000001` | Gokul Dham Residency, Kim Char Rasta | Active New Request (`PENDING_ADMIN_REVIEW`) & Past Delivered Order |
+| **Rajesh Verma** | `9800000002` | Shreenathji Society, Mandvi Road | Invoice Generated, Awaiting Customer Approval (`WAITING_FOR_CUSTOMER_APPROVAL`) |
+| **Anjali Mehta** | `9800000003` | Sardar Patel Nagar, GIDC Area | Bill Approved by Customer (`CONFIRMED`) |
+| **Vikram Patel** | `9800000004` | Radhe Krishna Arcade, Main Bazaar | Rider Dispatched (`RIDER_ASSIGNED` to Suresh Kumar) |
+| **Neha Desai** | `9800000005` | Royal Enclave, Char Rasta | Rider On The Way (`OUT_FOR_DELIVERY` with Deepak Solanki) |
+
+### 🛵 2 Demo Delivery Riders (Password: `Rider@123`)
+| Rider Name | Mobile Number | Rider ID | Vehicle Number | Assigned Shift / Active Deliveries |
+| :--- | :--- | :--- | :--- | :--- |
+| **Suresh Kumar** | `9800000011` | `RDR-0002` | `GJ-05-SK-1001` | Day Shift (Honda Activa) — Assigned to Vikram Patel's order |
+| **Deepak Solanki** | `9800000012` | `RDR-0003` | `GJ-05-DS-2002` | Evening Shift (Hero Splendor) — Out for delivery to Neha Desai |
 
 ---
 
@@ -165,11 +181,14 @@ VITE_API_URL=http://localhost:5000/api
 npm run build
 ```
 
-### 4. Seed Initial Accounts
-Populate your database with the default admin, customer, and rider accounts:
+### 4. Seed Initial Accounts & Realistic Demo Data
+Populate your database with the default roles or the complete demo dataset (5 customers, 2 riders, active medical requests across all stages):
 ```bash
-cd backend
-node scripts/seed-all-roles.js
+# Seed default admin, customer, and rider:
+npm --prefix backend run seed:all
+
+# Or seed full demo data (5 customers, 2 riders, realistic medicine orders):
+npm run seed:demo
 ```
 
 ### 5. Start Development Servers
