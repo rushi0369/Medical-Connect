@@ -9,8 +9,14 @@ const READ_ONLY_METHODS = new Set(['GET', 'HEAD', 'OPTIONS']);
  */
 export function verifyOrigin(req, _res, next) {
   const origin = req.get('origin');
+  const allowed = [env.CLIENT_URL, process.env.RENDER_EXTERNAL_URL].filter(Boolean);
 
-  if (!READ_ONLY_METHODS.has(req.method) && origin && origin !== env.CLIENT_URL) {
+  if (
+    !READ_ONLY_METHODS.has(req.method) &&
+    origin &&
+    !allowed.includes(origin) &&
+    !origin.endsWith('.onrender.com')
+  ) {
     return next(new AppError(403, 'ORIGIN_NOT_ALLOWED', 'Requests from this website are not allowed.'));
   }
 
